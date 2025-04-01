@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     google: 'SxzULmUVpWNorVEp5hd3rAMtuH_oXmQpxd-LdSZUsN8',
     yandex: 'b26cb632570ea2fb',
     other: {
-      'naver-site-verification': 'naverd3ac23819bb1d26a6cb50281f185e5e1',
+      'naver-site-verification': 'a2e995950301ec2bfc26bddaeb7700b382120e06',
       'msvalidate.01': '900DC9F12AAD145614A53C291EA6A419'
     }
   },
@@ -69,6 +69,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <meta name="google-site-verification" content="SxzULmUVpWNorVEp5hd3rAMtuH_oXmQpxd-LdSZUsN8" />
+        <meta name="naver-site-verification" content="a2e995950301ec2bfc26bddaeb7700b382120e06" />
       </head>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         <LanguageProvider>

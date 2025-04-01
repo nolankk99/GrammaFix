@@ -1,0 +1,84 @@
+{
+  "common": {
+    "title": "AI Grammar Corrector",
+    "description": "AI automatically corrects your text",
+    "subDescription": "Fix spelling and grammar errors and create natural sentences",
+    "loading": "Loading...",
+    "error": "An error occurred.",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "create": "Create",
+    "search": "Search",
+    "close": "Close",
+    "copy": "Copy",
+    "copied": "Copied",
+    "copyFailed": "Failed to copy. Please check your browser settings.",
+    "powered": "Powered by Google Gemini AI",
+    "offlineWarning": "You are offline. Please check your internet connection.",
+    "offlineError": "Correction is not available in offline mode.",
+    "clear": "Clear All"
+  },
+  "navigation": {
+    "home": "Home",
+    "history": "History",
+    "about": "About",
+    "contact": "Contact",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "profile": "Profile"
+  },
+  "corrector": {
+    "originalText": "Original Text",
+    "correctedText": "Corrected Text",
+    "placeholder": "Enter text to correct. Example: 'I going to school'",
+    "correct": "Correct",
+    "correcting": "Correcting...",
+    "corrected": "Text has been corrected.",
+    "noCorrection": "No corrections needed.",
+    "error": "An error occurred during correction."
+  },
+  "howto": {
+    "title": "How to Use",
+    "step1": "Enter text to correct in the left input area.",
+    "step2": "Select language (Korean, English, Japanese).",
+    "step3": "Click the \"Correct\" button.",
+    "step4": "See the corrected result on the right."
+  },
+  "languages": {
+    "ko": "한국어",
+    "en": "English",
+    "ja": "日本語"
+  },
+  "tech": {
+    "title": "AI Technology Information",
+    "description": "This service uses Google Gemini AI model to correct text. Gemini excels in natural language processing, understanding context and providing appropriate corrections.",
+    "ko": {
+      "title": "Korean Correction",
+      "description": "Provides spelling, grammar, and vocabulary corrections."
+    },
+    "en": {
+      "title": "English Correction",
+      "description": "Provides grammar, punctuation, and expression corrections."
+    },
+    "ja": {
+      "title": "Japanese Correction",
+      "description": "Provides particle, honorific, and expression corrections."
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 AI Grammar Corrector. All rights reserved.",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "contact": "Contact Us"
+  },
+  "aiInfo": {
+    "title": "AI Technology Information",
+    "description": "This service uses the Google Gemini AI model to correct sentences. Gemini has excellent natural language processing capabilities to understand context and provide appropriate corrections.",
+    "details": "Supports Korean, English, and Japanese, providing corrections in various aspects such as spelling, grammar, vocabulary, particles, honorifics, and expressions."
+  }
+} 

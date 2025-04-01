@@ -1,0 +1,84 @@
+{
+  "common": {
+    "title": "AI文章校正ツール",
+    "description": "AIが文章を自動で校正します",
+    "subDescription": "誤字脱字や文法ミスを修正し、自然な文章に仕上げます",
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました。",
+    "submit": "送信",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "delete": "削除",
+    "edit": "編集",
+    "view": "表示",
+    "create": "作成",
+    "search": "検索",
+    "close": "閉じる",
+    "copy": "コピー",
+    "copied": "コピー済み",
+    "copyFailed": "コピーに失敗しました。ブラウザの設定を確認してください。",
+    "powered": "Powered by Google Gemini AI",
+    "offlineWarning": "オフライン状態です。インターネット接続を確認してください。",
+    "offlineError": "オフライン状態では校正できません。",
+    "clear": "全て削除"
+  },
+  "navigation": {
+    "home": "ホーム",
+    "history": "履歴",
+    "about": "サービスについて",
+    "contact": "お問い合わせ",
+    "login": "ログイン",
+    "register": "登録",
+    "logout": "ログアウト",
+    "profile": "プロフィール"
+  },
+  "corrector": {
+    "originalText": "原文",
+    "correctedText": "校正済みテキスト",
+    "placeholder": "校正するテキストを入力してください。例: '学校が行きました'",
+    "correct": "校正する",
+    "correcting": "校正中...",
+    "corrected": "文章が校正されました。",
+    "noCorrection": "校正する箇所はありませんでした。",
+    "error": "校正中にエラーが発生しました。"
+  },
+  "howto": {
+    "title": "使い方",
+    "step1": "左の入力欄に校正したいテキストを入力してください。",
+    "step2": "言語を選択してください（韓国語、英語、日本語）。",
+    "step3": "「校正する」ボタンをクリックしてください。",
+    "step4": "右側に校正結果が表示されます。"
+  },
+  "languages": {
+    "ko": "한국어",
+    "en": "English",
+    "ja": "日本語"
+  },
+  "tech": {
+    "title": "AI技術情報",
+    "description": "このサービスはGoogle Gemini AIモデルを活用して文章を校正します。Geminiは自然言語処理能力に優れ、文脈を理解し適切な校正を提供します。",
+    "ko": {
+      "title": "韓国語校正",
+      "description": "スペル、文法、語彙の校正を提供します。"
+    },
+    "en": {
+      "title": "英語校正",
+      "description": "文法、句読点、表現の校正を提供します。"
+    },
+    "ja": {
+      "title": "日本語校正",
+      "description": "助詞、敬語、表現の校正を提供します。"
+    }
+  },
+  "footer": {
+    "copyright": "© 2023 AI文章校正ツール. All rights reserved.",
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー",
+    "contact": "お問い合わせ"
+  },
+  "aiInfo": {
+    "title": "AI技術情報",
+    "description": "このサービスはGoogle Gemini AIモデルを活用して文章を校正します。Geminiは自然言語処理能力に優れ、文脈を理解して適切な校正を提供します。",
+    "details": "韓国語、英語、日本語をサポートし、スペル、文法、語彙、助詞、敬語、表現など様々な側面で校正を提供します。"
+  }
+} 

@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI 문장 교정기 (GrammaFix)
 
-## Getting Started
+AI를 활용한 다국어 문장 교정 서비스입니다. 한국어, 영어, 일본어 텍스트의 맞춤법, 문법을 자동으로 교정해 드립니다.
 
-First, run the development server:
+## 주요 기능
+
+- 한국어, 영어, 일본어 텍스트 교정 지원
+- Google Gemini AI 모델을 활용한 고품질 교정
+- 다국어 인터페이스 지원 (한국어, 영어, 일본어)
+- 오프라인 상태 감지 및 대응
+- 히스토리 기능으로 이전 교정 내역 확인
+
+## 기술 스택
+
+- **Frontend**: Next.js, TypeScript, TailwindCSS
+- **AI Model**: Google Gemini AI
+- **기타 도구**: i18n (다국어 지원)
+
+## 시작하기
+
+### 필수 조건
+
+- Node.js 18.0.0 이상
+- npm 또는 yarn
+
+### 설치 방법
 
 ```bash
+# 저장소 복제
+git clone https://github.com/nolankk99/GrammaFix.git
+cd GrammaFix
+
+# 의존성 설치
+npm install
+# 또는
+yarn install
+
+# 개발 서버 실행
 npm run dev
-# or
+# 또는
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 환경 변수 설정
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`.env.local` 파일을 생성하고 다음 변수를 설정하세요:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key
+```
 
-## Learn More
+## 라이선스
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT License

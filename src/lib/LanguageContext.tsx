@@ -2,6 +2,11 @@
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
+// 번역 파일 import
+import koTranslations from '../../public/locales/ko.json';
+import enTranslations from '../../public/locales/en.json';
+import jaTranslations from '../../public/locales/ja.json';
+
 type Language = 'ko' | 'en' | 'ja';
 
 interface LanguageContextType {
@@ -12,9 +17,16 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
+// 정적으로 번역 파일 포함
+const translationFiles = {
+  ko: koTranslations,
+  en: enTranslations,
+  ja: jaTranslations
+};
+
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguage] = useState<Language>('ko');
-  const [translations, setTranslations] = useState<Record<string, any>>({});
+  const [translations, setTranslations] = useState<Record<string, any>>(koTranslations);
 
   useEffect(() => {
     // 브라우저 언어 감지
@@ -36,37 +48,16 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     const initialLang = detectLanguage();
     setLanguage(initialLang);
 
-    // 번역 파일 로드
-    const loadTranslations = async () => {
-      try {
-        const response = await fetch(`/locales/${initialLang}.json`);
-        const data = await response.json();
-        setTranslations(data);
-      } catch (error) {
-        console.error('번역 파일을 불러오는데 실패했습니다:', error);
-        // 기본 한국어 번역으로 폴백
-        try {
-          const fallbackResponse = await fetch('/locales/ko.json');
-          const fallbackData = await fallbackResponse.json();
-          setTranslations(fallbackData);
-        } catch (fallbackError) {
-          console.error('기본 번역 파일도 불러오지 못했습니다:', fallbackError);
-        }
-      }
-    };
-
-    loadTranslations();
+    // 번역 데이터 설정
+    setTranslations(translationFiles[initialLang] || translationFiles.ko);
   }, []);
 
   const handleSetLanguage = (lang: Language) => {
     setLanguage(lang);
     localStorage.setItem('language', lang);
     
-    // 언어 변경 시 번역 데이터 다시 로드
-    fetch(`/locales/${lang}.json`)
-      .then(res => res.json())
-      .then(data => setTranslations(data))
-      .catch(error => console.error('언어 변경 중 오류 발생:', error));
+    // 언어 변경 시 번역 데이터 업데이트
+    setTranslations(translationFiles[lang] || translationFiles.ko);
   };
 
   const t = (key: string, section?: string) => {

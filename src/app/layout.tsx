@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import { LanguageProvider } from "@/lib/LanguageContext";
 import { MetadataProvider } from "@/lib/MetadataContext";
 import MainFooter from '@/components/MainFooter';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -44,10 +45,11 @@ export const metadata: Metadata = {
     }
   },
   verification: {
-    google: "GOOGLE_VERIFICATION_CODE",
-    yandex: "YANDEX_VERIFICATION_CODE",
+    google: 'fdC-duVrSLPF0dXlV9xqT9fQuXiynHAMiQEVAJx9rSM',
+    yandex: 'b26cb632570ea2fb',
     other: {
-      "naver-site-verification": "NAVER_VERIFICATION_CODE"
+      'naver-site-verification': 'naverd3ac23819bb1d26a6cb50281f185e5e1',
+      'msvalidate.01': '900DC9F12AAD145614A53C291EA6A419'
     }
   },
   manifest: '/manifest.json',
@@ -61,7 +63,11 @@ export default function RootLayout({
   return (
     <html lang="ko" className="scroll-smooth">
       <head>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=YOUR_AD_CLIENT_ID" crossOrigin="anonymous"></script>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5138554444834908"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         <LanguageProvider>

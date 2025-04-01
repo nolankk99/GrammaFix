@@ -4,9 +4,16 @@
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>https://your-domain.com/</loc>
-    <lastmod>2024-05-01T00:00:00+00:00</lastmod>
-    <priority>1.00</priority>
+    <loc>https://grammafixer.vercel.app/</loc>
+    <lastmod>2024-04-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://grammafixer.vercel.app/history</loc>
+    <lastmod>2024-04-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <!-- 필요에 따라 추가 URL 항목을 여기에 추가하세요 -->
 </urlset> 

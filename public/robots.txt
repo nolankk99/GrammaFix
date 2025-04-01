@@ -1,9 +1,6 @@
-# *
+# 모든 검색 엔진에 대한 설정
 User-agent: *
 Allow: /
 
-# Host
-Host: https://your-domain.com
-
-# Sitemaps
-Sitemap: https://your-domain.com/sitemap.xml 
+# 사이트맵 위치
+Sitemap: https://grammafixer.vercel.app/sitemap.xml 

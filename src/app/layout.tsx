@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'AI 문장 교정기 - 맞춤법과 문법 오류를 수정하세요',
     description: '맞춤법, 문법 오류를 AI가 자동으로 교정해주는 서비스입니다. 한국어, 영어, 일본어를 지원합니다.',
-    url: 'https://ai-grammar-fixer.vercel.app',
+    url: 'https://grammafixer.vercel.app',
     siteName: 'AI 문장 교정기',
     locale: 'ko_KR',
     type: 'website',
@@ -39,13 +39,13 @@ export const metadata: Metadata = {
   creator: 'AI 문장 교정기 팀',
   alternates: {
     languages: {
-      'ko': '/ko',
-      'en': '/en',
-      'ja': '/ja',
-    }
+      'ko': 'https://grammafixer.vercel.app',
+      'en': 'https://grammafixer.vercel.app?lang=en',
+      'ja': 'https://grammafixer.vercel.app?lang=ja',
+    },
   },
   verification: {
-    google: 'fdC-duVrSLPF0dXlV9xqT9fQuXiynHAMiQEVAJx9rSM',
+    google: 'SxzULmUVpWNorVEp5hd3rAMtuH_oXmQpxd-LdSZUsN8',
     yandex: 'b26cb632570ea2fb',
     other: {
       'naver-site-verification': 'naverd3ac23819bb1d26a6cb50281f185e5e1',
@@ -68,6 +68,7 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5138554444834908"
           crossOrigin="anonymous"
         />
+        <meta name="google-site-verification" content="SxzULmUVpWNorVEp5hd3rAMtuH_oXmQpxd-LdSZUsN8" />
       </head>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         <LanguageProvider>
